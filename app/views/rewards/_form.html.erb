@@ -11,37 +11,38 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :first_name, style: "display: block" %>
-    <%= form.text_field :first_name %>
+  <div class="field form-group">
+    <%#= form.label :first_name, style: "display: block" %>
+    <%= form.text_field :first_name, class:"form-control", placeholder:"First Name" %>
+
   </div>
 
-  <div>
-    <%= form.label :last_name, style: "display: block" %>
-    <%= form.text_field :last_name %>
+  <div class="field form-group">
+    <%#= form.label :last_name, style: "display: block" %>
+    <%= form.text_field :last_name, class:"form-control", placeholder:"Last Name" %>
   </div>
 
-  <div>
-    <%= form.label :email, style: "display: block" %>
-    <%= form.text_field :email %>
+  <div class="field form-group">
+    <%#= form.label :email, style: "display: block" %>
+    <%= form.text_field :email, class:"form-control", placeholder:"Email Address" %>
   </div>
 
-  <div>
-    <%= form.label :phone, style: "display: block" %>
-    <%= form.text_field :phone %>
+  <div class="field form-group">
+    <%#= form.label :phone, style: "display: block" %>
+    <%= form.text_field :phone, class:"form-control", placeholder:"Phone Number" %>
   </div>
 
-  <div>
-    <%= form.label :company_name, style: "display: block" %>
-    <%= form.text_field :company_name %>
+  <div class="field form-group">
+    <%#= form.label :company_name, style: "display: block" %>
+    <%= form.text_field :company_name, class:"form-control", placeholder:"Company Name" %>
   </div>
 
-  <div>
-    <%= form.label :company_website, style: "display: block" %>
-    <%= form.text_field :company_website %>
+  <div class="field form-group">
+    <%#= form.label :company_website, style: "display: block" %>
+    <%= form.text_field :company_website, class:"form-control",placeholder:"Company Website" %>
   </div>
-
+<br/>
   <div>
-    <%= form.submit %>
+    <%= form.submit :Submit, class:'btn btn-secondary'%>
   </div>
 <% end %>
