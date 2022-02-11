@@ -1,0 +1,15 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Tenant Reward Solutions</h1>
+
+
+<div id="rewards">
+  <% @rewards.each do |reward| %>
+    <%#= render reward %>
+    <p>
+      <%#= link_to "Show this reward", reward %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "Free DEMO!", new_reward_path %>
