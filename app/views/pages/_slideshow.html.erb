@@ -1,11 +1,3 @@
-<p style="color: green"><%= notice %></p>
-
-<div class="header", text align="center">
-<h1>Tenant Reward Solutions</h1>
-<br/>
-
-<h2> Good tenants are earned, show your appreciation!</h2>
-</div>
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -13,15 +5,15 @@
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
   </ol>
   <div class="carousel-inner">
-    <div class="carousel-item active", text align="center">
-      <%= image_tag ("FamilyGame.jpeg") %>
+    <div class="carousel-item active">
       
+      <img src="..." class="d-block w-100" alt="...">
     </div>
-    <div class="carousel-item", text align="center">
-      <%= image_tag ("CoupleCooking.jpeg") %>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
     </div>
-    <div class="carousel-item", text align="center">
-      <%= image_tag ("Online.jpeg") %>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -32,17 +24,4 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-</div>
-<div id="rewards">
-
-  <% @rewards.each do |reward| %>
-    <%#= render reward %>
-    <p>
-      <%#= link_to "Show this reward", reward %>
-    </p>
-  <% end %>
-</div>
-
-<div class="free_demo", text align="center">
-<%= link_to "Free DEMO!", new_reward_path, class:"btn btn-secondary"%>
 </div>

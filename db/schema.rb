@@ -13,12 +13,12 @@
 ActiveRecord::Schema.define(version: 2022_02_11_145804) do
 
   create_table "rewards", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
-    t.string "email"
-    t.string "phone"
-    t.string "company_name"
-    t.string "company_website"
+    t.string "first_name", null: false
+    t.string "last_name", null: false
+    t.string "email", null: false
+    t.string "phone", null: false
+    t.string "company_name", null: false
+    t.string "company_website", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
